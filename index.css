@@ -1,0 +1,814 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.body::-webkit-scrollbar {
+  display: none;
+}
+/* Body-г 6000px биш чөлөөтэй болгох */
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  min-height: 100vh; /* Хатуу өндөр өгөхгүй! */
+  overflow-x: hidden; /* Хажуу тийшээ савлахыг зогсооно */
+}
+.sec1 {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-family: sans-serif;
+}
+.topbackground {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 30px;
+}
+
+.headliner {
+  width: 100%;
+  height: 44px;
+  gap: 24px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  margin-top: 15px;
+  background-color: rgba(245, 245, 247, 0.8);
+  z-index: 1;
+}
+.sec1word {
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 52px;
+}
+#sec1background {
+  background-size: cover;
+  width: 100%;
+  height: 692px;
+}
+.figure0 {
+  width: 100%;
+  height: 692px;
+  background-image: url("/Figure0.png");
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  padding: 55px;
+}
+.figure0frame {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  width: 405px;
+  height: 172px;
+  gap: 20px;
+}
+.figure0header {
+  font-size: 52px;
+  font-weight: 600;
+  color: white;
+}
+
+.figure0para {
+  font-size: 24px;
+  color: white;
+}
+.figure0buttons {
+  width: 207px;
+  height: 44px;
+  gap: 16px;
+  display: flex;
+  flex-direction: row;
+}
+.figure0button1 {
+  width: 123px;
+  height: 44px;
+  border-radius: 999px;
+  background-color: rgba(0, 113, 227, 1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.figure0button2 {
+  width: 123px;
+  height: 44px;
+  border-radius: 999px;
+  border: 1px rgba(0, 113, 227, 1) solid;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgba(0, 113, 227, 1);
+}
+.figure1 {
+  width: 100%;
+  height: 692px;
+  background-image: url("/Figure1.png");
+  position: relative;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  padding: 55px;
+  margin-top: 10px;
+}
+.figure1frame {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  width: 405px;
+  height: 172px;
+  gap: 20px;
+}
+.figure1header {
+  font-size: 52px;
+  font-weight: 600;
+  color: white;
+}
+
+.figure1para {
+  font-size: 24px;
+  color: white;
+}
+.figure1buttons {
+  width: 207px;
+  height: 44px;
+  gap: 16px;
+  display: flex;
+  flex-direction: row;
+}
+.figure1button1 {
+  width: 123px;
+  height: 44px;
+  border-radius: 999px;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: black;
+}
+.figure1button2 {
+  width: 123px;
+  height: 44px;
+  border-radius: 999px;
+  border: 1px white solid;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+.figure2 {
+  width: 100%;
+  height: 692px;
+  background-image: url("/Figure3.png");
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  padding: 55px;
+  align-items: end;
+  margin-top: 10px;
+}
+.figure2frame {
+  width: 405px;
+  height: 164px;
+  gap: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.figure2header {
+  font-size: 52px;
+  width: 405px;
+  height: 60px;
+  font-weight: 600;
+  text-align: center;
+}
+.figure2para {
+  font-size: 24px;
+  width: 405px;
+  height: 32px;
+  text-align: center;
+}
+.figure2button {
+  height: 44px;
+  width: 114px;
+  background-color: rgba(0, 113, 227, 1);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 999px;
+}
+.sec2row1 {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  margin-top: 10px;
+}
+.ipadfigure {
+  background-image: url("/ipad.png");
+  width: 50%;
+  height: 580px;
+  background-position: center;
+}
+.ipad {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 58px;
+  flex-direction: column;
+  gap: 10px;
+}
+#ipadair {
+  width: 430px;
+  height: 33px;
+}
+.ipadpara1 {
+  color: #1d1d1f;
+  text-align: center;
+  font-family: Inter;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 25px;
+}
+.ipadbuttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  padding-top: 20px;
+  gap: 10px;
+}
+.ipadbutton1,
+.airpodsbutton1,
+.iwatchbutton1,
+.macbutton1,
+.tradebutton1,
+.cardbutton1 {
+  color: #fff;
+  text-align: center;
+  font-family: Inter;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: -0.374px;
+  background-color: rgba(0, 113, 227, 1);
+  width: 115px;
+  height: 40px;
+  border-radius: 999px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.ipadbutton2,
+.airpodsbutton2,
+.iwatchbutton2,
+.macbutton2 {
+  width: 68px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: -0.374px;
+  border: rgba(0, 113, 227, 1) 1px solid;
+  border-radius: 999px;
+  text-align: center;
+  color: rgba(0, 113, 227, 1);
+}
+.ipadpara2bg {
+  display: flex;
+  justify-content: center;
+}
+.ipadpara2 {
+  display: flex;
+  width: 169px;
+  height: 18px;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 18px;
+  background: linear-gradient(
+    90deg,
+    #0090f7 0%,
+    #ba62fc 33.33%,
+    #f2416b 66.67%,
+    #f55600 100%
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-top: 334px;
+}
+.airpodsfigure {
+  background-image: url("/airpids.png");
+  background-position: center;
+  height: 580px;
+  width: 50%;
+}
+.airpods {
+  display: flex;
+  width: 238px;
+  height: 44px;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.airpodspara1 {
+  color: #f5f5f7;
+  text-align: center;
+  font-family: Inter;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 44px; /* 122.222% */
+}
+.airpodspara2 {
+  width: 370px;
+  height: 25px;
+  color: #f5f5f7;
+  text-align: center;
+  font-family: Inter;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 25px; /* 138.889% */
+}
+.airpodsbuttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding-top: 10px;
+  gap: 15px;
+}
+.airpodsbg {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  flex-direction: column;
+  height: 100%;
+  gap: 10px;
+  padding: 58px;
+}
+.sec2row2 {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  margin-top: 10px;
+}
+.iwatch {
+  background-image: url("/iwatch.png");
+  width: 100%;
+  height: 580px;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 58px;
+}
+.iwatchlogo {
+  display: flex;
+  flex-direction: row;
+}
+#watchlogo {
+  width: 26.3529px;
+  height: 32px;
+}
+.watch {
+  width: 121px;
+  height: 39px;
+  color: #000;
+  text-align: center;
+  font-family: Inter;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.watchpara1 {
+  align-self: stretch;
+  color: #000;
+  text-align: center;
+  font-family: Inter;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 2px;
+  color: #000;
+  font-family: Inter;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.watchpara2 {
+  display: flex;
+  height: 25px;
+  flex-direction: column;
+  justify-content: center;
+  align-self: stretch;
+  color: #1d1d1f;
+  text-align: center;
+  font-family: Inter;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 25px; /* 138.889% */
+}
+.iwatchbuttons {
+  display: flex;
+  flex-direction: row;
+  padding-top: 16px;
+  gap: 16px;
+}
+.macbook {
+  background-image: url("/macbook.png");
+  background-position: center;
+  height: 580px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 58px;
+}
+.macbookparagraphs {
+  display: flex;
+  flex-direction: column;
+}
+.macpara1 {
+  display: flex;
+  height: 44px;
+  flex-direction: column;
+  justify-content: center;
+  align-self: stretch;
+  color: #1d1d1f;
+  text-align: center;
+  font-family: Inter;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 44px; /* 122.222% */
+}
+.macpara2 {
+  align-self: stretch;
+  color: #1d1d1f;
+  text-align: center;
+  font-family: Inter;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 25px; /* 138.889% */
+}
+.macbookbuttons {
+  display: flex;
+  flex-direction: row;
+  padding-top: 16px;
+  gap: 16px;
+}
+.sec2row3 {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  padding-top: 10px;
+}
+.trade {
+  background-image: url("/trade.png");
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 58px;
+  width: 100%;
+  height: 580px;
+  background-size: cover;
+}
+.tradehead {
+  display: flex;
+  flex-direction: row;
+  gap: 4px;
+}
+.headpara {
+  color: #000;
+  text-align: center;
+  font-family: Inter;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.tradeparagraph {
+  width: 322px;
+  height: 50px;
+}
+.tradepara1 {
+  color: #1d1d1f;
+  text-align: center;
+  font-family: Inter;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 25px; /* 138.889% */
+  align-self: stretch;
+}
+.tradebutton1 {
+  color: #fff;
+  text-align: center;
+  font-family: Inter;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: -0.374px;
+  background-color: rgba(0, 113, 227, 1);
+  width: 167px;
+  height: 40px;
+  border-radius: 999px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 16px;
+}
+.applecard {
+  background-image: url("/card.png");
+  display: flex;
+  background-position: center;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 58px;
+  width: 100%;
+  height: 580px;
+}
+.cardhead {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+}
+.cardparas {
+  color: #000;
+  text-align: center;
+  font-family: Inter;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.cardparagraph {
+  width: 322px;
+  height: 50px;
+}
+.cardpara1 {
+  align-self: stretch;
+  color: #1d1d1f;
+  text-align: center;
+  font-family: Inter;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 25px; /* 138.889% */
+}
+.cardbuttons {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+  padding-top: 16px;
+  justify-content: center;
+  align-items: center;
+}
+.cardbutton2 {
+  display: flex;
+  padding: 10px 16px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 999px;
+  border: 1px solid #0071e3;
+  display: flex;
+  justify-content: center;
+  color: #0071e3;
+}
+.sec3 {
+  font-family: sans-serif;
+}
+.sec3scrolltop {
+  display: flex;
+  column-gap: 15px;
+  overflow-x: scroll;
+  align-items: center;
+  scrollbar-width: none;
+  scroll-behavior: smooth;
+  scroll-snap-type: x mandatory;
+  background-position: center;
+  margin-top: 10px;
+}
+.scrolltop1 {
+  background-image: url("/scroll1.jpg");
+  min-width: 1250px;
+  height: 668px;
+}
+.scrolltop2 {
+  background-image: url("/scroll2.png");
+  min-width: 1250px;
+  height: 668px;
+  position: relative;
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+}
+.scrolltop3 {
+  background-image: url("/scroll3.jpg");
+  min-width: 1250px;
+  height: 668px;
+}
+.tablist {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 12px;
+  gap: 10px;
+  margin-bottom: 12px;
+}
+.dot {
+  display: block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: gray;
+}
+.hovering {
+  width: 100%;
+  overflow: hidden;
+  margin-top: 12px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  animation-name: spin;
+}
+
+.hovering-wrapper {
+  display: flex;
+  width: max-content;
+  animation: scroll 40s linear infinite;
+}
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%); /* Картуудын тал хүртэл гүйнэ */
+  }
+}
+
+.hovering:hover .hovering-wrapper {
+  animation-play-state: paused;
+}
+
+.hoveringbg {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding-right: 16px;
+}
+
+/* КАРТЫН СУУРЬ */
+.card {
+  width: 417px;
+  height: 236px;
+  position: relative;
+  flex-shrink: 0;
+  transition: all 0.4s ease;
+  overflow: hidden;
+  border-radius: 4px;
+}
+
+/* Background Зургууд */
+.hover1bg {
+  background: url("hover1.jpg") center/cover;
+}
+.hover3bg {
+  background: url("hover3.jpg") center/cover;
+}
+.hover4bg {
+  background: url("hover4.jpg") center/cover;
+}
+
+/* Жижиг зурагтай картууд */
+.hover2bg {
+  background-color: #1b2632;
+  display: flex;
+  align-items: center;
+  padding-left: 15px;
+}
+.hover5bg {
+  background-color: #ebb799;
+  display: flex;
+  align-items: center;
+  padding-left: 15px;
+}
+
+.inner-img {
+  width: 196px;
+  height: 196px;
+  object-fit: cover;
+}
+
+/* FOCUS ЭФФЕКТ */
+.hovering-wrapper:hover .card {
+  filter: brightness(0.4) grayscale(0.4);
+}
+
+.hovering-wrapper .card:hover {
+  filter: brightness(1) grayscale(0);
+  transform: scale(1.02);
+}
+
+/* ЛОГО БОЛОН ТЕКСТ */
+.card-info {
+  position: absolute;
+  inset: 0;
+  padding: 20px;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  align-items: end;
+  z-index: 2;
+  pointer-events: none;
+}
+
+.card-logo {
+  width: 78px;
+  height: 13px;
+}
+
+.card-text p {
+  margin: 0;
+  color: white;
+  font-size: 1rem;
+  font-weight: 500;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.6);
+  text-align: center;
+}
+.card-text1 p {
+  width: 223;
+  height: 18px;
+  font-weight: 600;
+  font-size: 14px;
+  color: white;
+  text-align: center;
+}
+.card-text2 {
+  position: absolute;
+  top: 109px;
+  left: 226px;
+  color: white;
+}
+
+/* OVERLAY & BUTTON */
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.25);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  z-index: 3;
+}
+
+.card:hover .overlay {
+  opacity: 1;
+}
+
+.listen-btn {
+  padding: 12px 28px;
+  border-radius: 30px;
+  border: none;
+  background: white;
+  color: black;
+  font-weight: bold;
+  cursor: pointer;
+  transform: translateY(10px);
+  transition: 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.card:hover .listen-btn {
+  transform: translateY(0);
+}
+#menulogo1 {
+  opacity: 0;
+}

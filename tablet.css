@@ -1,0 +1,129 @@
+/* ============================================================
+   ТАБЛЕТ ЗОРИУЛСАН ЗАСВАР (768px - 1024px)
+   ============================================================ */
+@media (min-width: 761px) and (max-width: 1024px) {
+  /* 1. Ерөнхий Layout - Таблет дээр 2 баганаар байж болно */
+  .sec2row1,
+  .sec2row2,
+  .sec2row3 {
+    display: flex;
+    flex-direction: row; /* Хажуу тийшээ хэвээрээ байлгана */
+    width: 100%;
+    gap: 10px;
+  }
+  .ipadfigure,
+  .airpodsfigure,
+  .iwatch,
+  .macbook,
+  .trade,
+  .applecard {
+    width: 50% !important; /* Дэлгэцийн талыг эзэлнэ */
+    height: 550px;
+    background-size: cover;
+  }
+
+  /* 2. Текстүүдийг Таблет дэлгэцэнд тааруулах */
+  .figure0header,
+  .figure1header,
+  .figure2header,
+  .headpara,
+  .cardparas,
+  .macpara1 {
+    font-size: 42px !important; /* Утаснаас том, Десктопоос жижиг */
+    text-align: center;
+  }
+
+  .figure0para,
+  .figure1para,
+  .figure2para {
+    font-size: 20px !important;
+  }
+
+  /* 3. Apple TV+ Slider (Таблет дээр 1250px-ийг 100% болгох) */
+  .scrolltop1,
+  .scrolltop2,
+  .scrolltop3 {
+    min-width: 100% !important;
+    height: 450px;
+  }
+
+  /* 4. HOVER CARDS (Таблет дээр 3 карт зэрэг цухуйж харагдахаар) */
+  .card {
+    width: 360px !important; /* Таблетын өргөнд тохирсон хэмжээ */
+    height: 210px !important;
+  }
+
+  .inner-img {
+    width: 160px !important;
+    height: 160px !important;
+  }
+
+  /* Таблет дээр Hover ажиллах тул Desktop шиг байлгаж болно */
+  /* Эсвэл Overlay-г бага зэрэг ил харагдуулж болно */
+  .overlay {
+    opacity: 0; /* Таблет дээр Touch хийхэд харагдана */
+  }
+  .card:active .overlay {
+    opacity: 1;
+  }
+
+  /* 5. Цэс (Navigation) */
+  .headliner {
+    gap: 20px;
+    justify-content: center;
+  }
+  .headliner p {
+    font-size: 13px;
+  }
+
+  /* 6. Текстийн байршил засах */
+  .ipadpara2 {
+    margin-top: 300px !important;
+  }
+
+  #ipadair {
+    width: 320px !important;
+  }
+  .scrolltop1 {
+    background-image: url("/tablet1.jpg");
+    background-size: cover;
+  }
+  .scrolltop2 {
+    background-image: url("/tablet3.jpg");
+    background-size: cover;
+  }
+  .scrolltop3 {
+    background-size: cover;
+  }
+  .headliner {
+    max-width: 761px;
+    display: none;
+  }
+  .topbackground {
+    display: flex;
+    justify-content: space-between;
+  }
+  .mobileline {
+    flex-direction: row;
+    display: flex;
+    justify-content: end;
+  }
+  .mobileline1 {
+    width: 17px;
+    height: 48px;
+    position: absolute;
+    left: 16px;
+  }
+  .mobileline2 {
+    width: 17px;
+    height: 48px;
+  }
+  .mobileline3 {
+    width: 17px;
+    height: 48px;
+  }
+  .mobileline4 {
+    width: 17px;
+    height: 17px;
+  }
+}
