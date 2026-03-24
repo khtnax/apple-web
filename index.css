@@ -812,3 +812,10 @@ body {
 #menulogo1 {
   opacity: 0;
 }
+
+.mobileline10 {
+  display: none;
+}
+.mobileline {
+  display: none;
+}
