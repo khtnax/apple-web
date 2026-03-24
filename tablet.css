@@ -85,11 +85,11 @@
     width: 320px !important;
   }
   .scrolltop1 {
-    background-image: url("/tablet1.jpg");
+    background-image: url("./tablet1.jpg");
     background-size: cover;
   }
   .scrolltop2 {
-    background-image: url("/tablet3.jpg");
+    background-image: url("./tablet3.jpg");
     background-size: cover;
   }
   .scrolltop3 {
