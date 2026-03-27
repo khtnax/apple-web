@@ -1,13 +1,12 @@
-/* ============================================================
-   ТАБЛЕТ ЗОРИУЛСАН ЗАСВАР (768px - 1024px)
-   ============================================================ */
 @media (min-width: 761px) and (max-width: 1024px) {
-  /* 1. Ерөнхий Layout - Таблет дээр 2 баганаар байж болно */
+  .headliner {
+    display: none;
+  }
   .sec2row1,
   .sec2row2,
   .sec2row3 {
     display: flex;
-    flex-direction: row; /* Хажуу тийшээ хэвээрээ байлгана */
+    flex-direction: row;
     width: 100%;
     gap: 10px;
   }
@@ -17,19 +16,18 @@
   .macbook,
   .trade,
   .applecard {
-    width: 50% !important; /* Дэлгэцийн талыг эзэлнэ */
+    width: 50% !important;
     height: 550px;
     background-size: cover;
   }
 
-  /* 2. Текстүүдийг Таблет дэлгэцэнд тааруулах */
   .figure0header,
   .figure1header,
   .figure2header,
   .headpara,
   .cardparas,
   .macpara1 {
-    font-size: 42px !important; /* Утаснаас том, Десктопоос жижиг */
+    font-size: 42px !important;
     text-align: center;
   }
 
@@ -39,7 +37,6 @@
     font-size: 20px !important;
   }
 
-  /* 3. Apple TV+ Slider (Таблет дээр 1250px-ийг 100% болгох) */
   .scrolltop1,
   .scrolltop2,
   .scrolltop3 {
@@ -47,9 +44,8 @@
     height: 450px;
   }
 
-  /* 4. HOVER CARDS (Таблет дээр 3 карт зэрэг цухуйж харагдахаар) */
   .card {
-    width: 360px !important; /* Таблетын өргөнд тохирсон хэмжээ */
+    width: 360px !important;
     height: 210px !important;
   }
 
@@ -58,16 +54,13 @@
     height: 160px !important;
   }
 
-  /* Таблет дээр Hover ажиллах тул Desktop шиг байлгаж болно */
-  /* Эсвэл Overlay-г бага зэрэг ил харагдуулж болно */
   .overlay {
-    opacity: 0; /* Таблет дээр Touch хийхэд харагдана */
+    opacity: 0;
   }
   .card:active .overlay {
     opacity: 1;
   }
 
-  /* 5. Цэс (Navigation) */
   .headliner {
     gap: 20px;
     justify-content: center;
@@ -76,7 +69,6 @@
     font-size: 13px;
   }
 
-  /* 6. Текстийн байршил засах */
   .ipadpara2 {
     margin-top: 300px !important;
   }
